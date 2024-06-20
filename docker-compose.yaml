@@ -1,4 +1,4 @@
-# version: '1.0'
+# version: '3.8'
 
 # services:
 #   java-app:
@@ -9,4 +9,3 @@
 #       - "8080:8080"
 #     volumes:
 #       - ./src:/app/src
-#     command: ["java", "-cp", "/app/src/main/java", "com.exemplo.App"]
