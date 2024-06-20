@@ -1,5 +1,5 @@
 # Use a imagem oficial do OpenJDK como base
-FROM openjdk:11-jre-slim
+FROM openjdk:11-slim
 
 # Crie um diretório para a aplicação
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY src /app/src
 
 # Compile a aplicação
-RUN javac /app/src/main/java/com/example/App.java
+RUN javac /app/src/main/java/com/exemplo/App.java
 
 # Defina o comando padrão para executar a aplicação
-CMD ["java", "com.example.App"]
+CMD ["java", "-cp", "/app/src/", "main.java.com.exemplo.App"]
